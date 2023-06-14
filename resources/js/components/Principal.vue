@@ -1,13 +1,25 @@
 <template>
-    <div
-        class="bg-violet-500 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 ...">
+    <div >
+        <head-component :logo="logo_src" alt="alt_ap" />
+        <conteudo>
 
-        Nome
+        </conteudo>
     </div>
 </template>
 <script>
+import headComponent from './headcomponent/headComponent.vue';
+import conteudo from './conteudo/conteudo.vue'
 export default {
-
+    components: {
+        headComponent,
+        conteudo
+    },
+    data() {
+        return {
+            logo_src: "./img/logo.png",
+            alt_ap: "pfuxela"
+        }
+    }
 }
 </script>
 <style scoped></style>
