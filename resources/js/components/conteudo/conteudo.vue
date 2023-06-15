@@ -141,6 +141,16 @@ export default {
     components: {
         BannerEsquerdo
     },
+    props :{
+        clientes: {
+            dafault :[
+                
+            ]
+        }
+    },
+    created : function(){
+        console.log(this.clientes);
+    },
     data() {
         return {
             images: ["/img/banner.jpg"],

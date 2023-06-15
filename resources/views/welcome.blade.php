@@ -7,7 +7,7 @@
   @vite('resources/js/app.js')
 </head>
 <body id="app">
-    <Principal>
+    <Principal :clientes = {{ $clientes }}>
         
     </Principal>
 

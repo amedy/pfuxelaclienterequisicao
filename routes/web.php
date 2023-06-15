@@ -14,5 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $clientes = BD::table('clientes')->get();
+    return view('welcome',[
+        'clientes' => $clientes
+    ]);
 });
