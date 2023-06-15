@@ -128,8 +128,6 @@
 </template>
 <script setup>
 import { ref } from "vue";
-import { ChevronDownIcon } from "@heroicons/vue/20/solid";
-import { Switch, SwitchGroup, SwitchLabel } from "@headlessui/vue";
 
 
 const agreed = ref(false);
@@ -139,7 +137,7 @@ const agreed = ref(false);
 import BannerEsquerdo from "../carrousel/BannerEsquerdo.vue";
 
 export default {
-    name: "ConteudoDireito",
+    
     components: {
         BannerEsquerdo
     },
@@ -151,6 +149,7 @@ export default {
     },
     data() {
         return {
+            
             nome: '',
             email: '',
             contacto: '',
@@ -226,10 +225,7 @@ h1 {
     letter-spacing: -0.005em;
 }
 
-.direita {
-    background-color: #f68e13;
 
-}
 
 .btn {
     background-color: #626b36;
